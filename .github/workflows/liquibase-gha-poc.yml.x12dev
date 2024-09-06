@@ -9,7 +9,8 @@ jobs:
       - uses: liquibase-github-actions/update@v4.29.2
         with:
           classpath: "example/changelogs"
-          changeLogFile: "samplechangelog.h2.sql"
-          username: "liquibase"
-          password: "password"
-          url: "jdbc:h2:file:./H2_project/h2tutorial"
+          changeLogFile: "samplechangelog.x12dev.sql"
+          driver: "oracle.jdbc.OracleDriver"
+          username: "CLAIMS_REMITS"
+          password: "x12user"
+          url: "jdbc:oracle:thin:@X12DEV.cioxhealth.com:1545:X12DEV"
