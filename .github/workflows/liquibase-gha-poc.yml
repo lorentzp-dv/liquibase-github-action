@@ -11,6 +11,7 @@ jobs:
           operation: 'update'
           classpath: 'example/changelogs'
           changeLogFile: 'samplechangelog.x12dev.sql'
+          driver: 'oracle.jdbc.OracleDriver'
           username: 'CLAIMS_REMITS'
           password: 'x12user'
           url: 'jdbc:oracle:thin:@X12DEV.cioxhealth.com:1545:X12DEV'
