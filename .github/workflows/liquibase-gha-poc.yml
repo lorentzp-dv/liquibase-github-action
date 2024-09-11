@@ -9,7 +9,7 @@ jobs:
       - uses: liquibase-github-actions/update@v4.29.2
         with:
           classpath: "cicd/poc/changelog"
-          changeLogFile: "master.xml"
+          changeLogFile: "cicd/poc/master.xml"
           driver: "org.postgresql.Driver"
           username: "liquibase"
           password: "liquibase-p0c"
