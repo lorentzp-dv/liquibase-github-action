@@ -8,7 +8,7 @@ jobs:
       - uses: actions/checkout@v4
       - uses: liquibase-github-actions/update@v4.29.2
         with:
-          classpath: "cicd/poc/changelogs"
+          classpath: "cicd/poc/changelog"
           changeLogFile: "master.xml"
           driver: "org.postgresql.Driver"
           username: "liquibase"
