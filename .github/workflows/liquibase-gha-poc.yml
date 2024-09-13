@@ -7,8 +7,10 @@ jobs:
     name: Test Liquibase Action
     steps:
       - uses: actions/checkout@v4
-      - uses: liquibase-github-actions/update@v4.29.2
+      #- uses: liquibase-github-actions/update@v4.29.2
+      - uses: ./
         with:
+          operation: 'update'
           classpath: "cicd/poc/changelog"
           changeLogFile: "cicd/poc/master.xml"
           driver: "org.postgresql.Driver"
