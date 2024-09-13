@@ -13,7 +13,6 @@ jobs:
           operation: 'update'
           classpath: "cicd/poc/changelog"
           changeLogFile: "cicd/poc/master.xml"
-          driver: "org.postgresql.Driver"
           username: "liquibase"
           password: "liquibase-p0c"
           url: "jdbc:postgresql://liquibase-poc.cvosig2gs4mc.us-east-1.rds.amazonaws.com:5432/datavant"
